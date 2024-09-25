@@ -6,7 +6,7 @@ class Globo
    x=_x;
    y=_y; 
    vx=random(-0.25,0.25);
-   vy=random(-2,-0.5);
+   vy=random(-2,2);
   }
 
   void update()
@@ -18,6 +18,7 @@ class Globo
   void dibujate()
   {
       ellipse(x,y,100,100);
+      line(x,y+65,x,y+70);
   }
   
 }
@@ -27,7 +28,7 @@ ArrayList<Globo> globos;
 
 void setup()
 {
-  size(640,500);
+  size(1000,500);
   globos = new ArrayList<Globo>();  
 }
 
